@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1b1f24 0%, #0a0c0f 70%);
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
+
+.terminal-window {
+  width: min(900px, 92vw);
+  height: min(620px, 88vh);
+  background: #0d1117;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 255, 140, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-titlebar {
+  background: #161b22;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #21262d;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.title {
+  margin-left: 10px;
+  color: #8b949e;
+  font-size: 13px;
+}
+
+.terminal-body {
+  flex: 1;
+  padding: 16px 18px;
+  overflow-y: auto;
+  color: #39ff14;
+  font-size: 14px;
+  line-height: 1.5;
+  text-shadow: 0 0 4px rgba(57, 255, 20, 0.25);
+}
+
+.banner {
+  white-space: pre-wrap;
+  color: #58a6ff;
+  margin-bottom: 12px;
+  text-shadow: none;
+}
+
+#output-log .entry {
+  margin-bottom: 6px;
+}
+
+#output-log .echoed-prompt {
+  color: #c9d1d9;
+}
+
+#output-log .echoed-prompt .user {
+  color: #39ff14;
+  font-weight: bold;
+}
+
+#output-log .echoed-prompt .path {
+  color: #58a6ff;
+}
+
+#output-log .cmd-text {
+  color: #e6edf3;
+}
+
+#output-log pre {
+  margin: 2px 0 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  color: #c9d1d9;
+}
+
+#output-log pre.error-output {
+  color: #ff7b72;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.prompt {
+  white-space: nowrap;
+  color: #c9d1d9;
+}
+
+.prompt .user {
+  color: #39ff14;
+  font-weight: bold;
+}
+
+.prompt .path {
+  color: #58a6ff;
+}
+
+#cmd-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e6edf3;
+  font: inherit;
+  caret-color: #39ff14;
+}
+
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #21262d;
+  border-radius: 4px;
+}
+.terminal-body::-webkit-scrollbar-track {
+  background: transparent;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOC Terminal Trainer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="terminal-window">
+    <div class="terminal-titlebar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">{{ username }}@{{ hostname }}: ~ — SOC Terminal Trainer</span>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <div class="banner">
+Welcome to the SOC Analyst Practice Terminal
+Type 'help' to see available commands. This is a simulated filesystem — nothing here touches a real machine.
+      </div>
+      <div id="output-log"></div>
+      <div class="input-line" id="active-line">
+        <span class="prompt"><span class="user">{{ username }}@{{ hostname }}</span>:<span class="path">{{ prompt_path }}</span>$</span>
+        <input type="text" id="cmd-input" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus />
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='terminal.js') }}"></script>
+</body>
+</html>
