@@ -1,0 +1,34 @@
+## Hi, I'm Selorm 👋
+
+AI/ML practitioner working at the intersection of machine learning and regulated data. I hold a **Post Graduate Program in AI & Machine Learning** from **UT Austin's McCombs School of Business** and an **active Public Trust clearance**, and I spend my days keeping federal records accurate at the CDC.
+
+I care most about the part people skip: getting a model out of the notebook and into something someone can actually call.
+
+### What I've built
+
+**[ai-ml-portfolio](https://github.com/selormg/ai-ml-portfolio)** — six end-to-end projects across healthcare, energy, financial services, industrial safety and food delivery.
+
+- **Medical Assistant** — RAG over a 4,100-page clinical manual, with an LLM-as-judge groundedness evaluation and safety guardrails
+- **ReneWind** — predictive maintenance on turbine sensor data; raised failure recall from 31% to 78% on a 5.6% positive class
+- **EasyVisa** — tuned ensembles for visa adjudication triage, 93.5% recall at 0.82 F1
+- **HelmNet** — VGG-16 transfer learning for workplace safety compliance, 90.9% test accuracy
+- **Personal Loan Campaign** — cost-complexity pruning took a memorising decision tree to 98% accuracy
+- **FoodHub** — exploratory analysis and a stakeholder deck for a 1,898-order delivery marketplace
+
+Each project documents the business problem, the approach, the results, and what I would change before putting it in production.
+
+### Deployed
+
+**SuperKart** — a retail revenue forecasting model serving live predictions through a Flask API containerised in Docker, with a Streamlit front end, both running on Hugging Face Spaces.
+
+### Working with
+
+`Python` `pandas` `NumPy` `scikit-learn` `TensorFlow/Keras` `LangChain` `ChromaDB` `Flask` `Docker` `Streamlit` `Hugging Face` `SQL` `Git` `Linux`
+
+### Background
+
+Four years across federal records management, enterprise inventory operations, and endpoint support — which is to say I learned what bad data costs before I learned how to model it. CompTIA Security+ certified.
+
+### Reach me
+
+[LinkedIn](https://www.linkedin.com/in/selorm-ganyo) · [Verified project e-portfolio](https://www.mygreatlearning.com/eportfolio/selorm-ganyo)
